@@ -1,4 +1,4 @@
-from animals import Cat, Tiger, Dog, Duck, Fish, FlyingFish
+from animals import Cat, Tiger, Dog, Duck, Fish, FlyingFish, Animal
 
 
 def do_actions(animal, name):
@@ -30,3 +30,6 @@ if __name__ == "__main__":
 
     # Flying Fish
     do_actions(FlyingFish, "Goldfish")
+
+    # Animal
+    do_actions(Animal, "Animal")
