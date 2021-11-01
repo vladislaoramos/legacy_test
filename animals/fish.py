@@ -1,7 +1,14 @@
+"""
+A module with a fish class.
+"""
+
 from .animal import Animal
 
 
 class Fish(Animal):
+    """
+    Fish class.
+    """
     def __init__(self, name: str = "Fish", init_parameters: dict = None):
         super().__init__(
             name=name,
@@ -12,6 +19,9 @@ class Fish(Animal):
 
 
 class FlyingFish(Animal):
+    """
+    Flying Fish class.
+    """
     def __init__(self, name: str = "FlyingFish", init_parameters: dict = None):
         super().__init__(
             name=name,

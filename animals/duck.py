@@ -1,7 +1,14 @@
+"""
+A module with a duck class.
+"""
+
 from .animal import Animal
 
 
 class Duck(Animal):
+    """
+    Duck class.
+    """
     def __init__(self, name: str = "Duck", init_parameters: dict = None):
         super().__init__(
             name=name,
