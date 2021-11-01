@@ -3,13 +3,13 @@ from animals import Cat, Tiger, Dog, Duck, Fish, FlyingFish, Animal
 
 def do_actions(animal, name):
     a = animal(name)
-    print(a.get_energy())
     a.say()
+    print(f"Start {a.name} Energy: {a.get_energy()}.")
     a.run()
     a.swim()
     a.fly()
     a.get_energy()
-    print(a.get_energy())
+    print(f"Remaining {a.name} Energy: {a.get_energy()}.")
 
 
 if __name__ == "__main__":
