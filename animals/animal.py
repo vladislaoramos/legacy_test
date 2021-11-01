@@ -1,5 +1,4 @@
-class Animal:
-    kind_str = {
+KIND_STR = {
         "Cat": "a cat",
         "Dog": "a dog",
         "Tiger": "a tiger",
@@ -7,8 +6,10 @@ class Animal:
         "FlyingFish": "a flying fish",
         "Fish": "a fish",
         "Duck": "a duck"
-    }
+}
 
+
+class Animal:
     def __init__(self,
                  name: str = "Animal",
                  energy: int = 100,
@@ -26,7 +27,7 @@ class Animal:
 
     def say(self) -> bool:
         cls_name = self.__class__.__name__
-        kind = Animal.kind_str[cls_name]
+        kind = KIND_STR[cls_name]
         self.last_speech = f"Hello, I'm {kind} and my name is {str(self.name)}."
         print(self.last_speech)
         return True
