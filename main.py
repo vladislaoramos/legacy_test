@@ -9,7 +9,7 @@ def do_actions(animal, name):
     a.swim()
     a.fly()
     a.get_energy()
-    print(f"Remaining {a.name} Energy: {a.get_energy()}.")
+    print(f"Remaining {a.name} Energy: {a.get_energy()}.\n")
 
 
 if __name__ == "__main__":
